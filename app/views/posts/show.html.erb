@@ -1,0 +1,11 @@
+<h1>Posts#show</h1>
+<p>Find me in app/views/posts/show.html.erb</p>
+
+<h2><%= @post.title %></h2>
+<p><%= @post.content %></p>
+<p>❤ Likes: <%= @post.likes %></p>
+
+<%= link_to @blogger.name, blogger_path(@blogger.id) %>
+<%= link_to @destination.name, destination_path(@destination.id) %>
+
+<%= button_to 'Like', like_path(@post.id) %>

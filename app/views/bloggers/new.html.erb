@@ -1,0 +1,10 @@
+<h1>Bloggers#new</h1>
+<p>Find me in app/views/bloggers/new.html.erb</p>
+
+<% if flash[:errors] %>
+    <% flash[:errors].each do |error| %>
+    <p><%= error %></p>
+    <% end %>
+<% end %>
+
+<%= render 'form' %>

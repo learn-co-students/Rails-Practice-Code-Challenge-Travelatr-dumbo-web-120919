@@ -1,0 +1,10 @@
+<h1>Bloggers#show</h1>
+<p>Find me in app/views/bloggers/show.html.erb</p>
+
+<h3>Name: <%= @blogger.name %></h3>
+<p>Age: <%= @blogger.age %></p>
+<p>Bio: <%= @blogger.bio %></p>
+<p>Likes: <%= @total_likes %></p>
+<p>Featured Post: <%= link_to @featured_post.title, post_path(@featured_post.id) %></p>
+
+
