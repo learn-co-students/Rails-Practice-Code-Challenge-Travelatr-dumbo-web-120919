@@ -1,0 +1,23 @@
+<h1>Edit a Post</h1>
+
+<% if flash[:errors] %>
+  <% flash[:errors].each do |msg| %>
+    <h2><%= msg%></h2>
+  <% end %>
+<% end %>
+
+<%= form_for @post do |f| %>
+
+  <%= f.label :title, 'Edit the Title for your Post:' %> <br/>
+  <%= f.text_field :title %>
+
+  <br/><br/>
+
+  <%= f.label :content, 'Edit the content of your Post:' %> <br/>
+  <%= f.text_area :content %>
+
+  <br/><br/>
+
+  <%= f.submit %>
+
+<% end %>
